@@ -16,6 +16,15 @@ import java.util.List;
  * @data 2023/2/7 17:09
  */
 public class UserServicelmpl implements UserService {
+    private  static UserServicelmpl userServicelmpl = new UserServicelmpl();
+
+    private UserServicelmpl() {
+    }
+    public static UserServicelmpl GetUserServicelmpl(){
+        return userServicelmpl;
+    }
+
+
     @Override
     public List<User> query() {
         List<User> list = new ArrayList<>();

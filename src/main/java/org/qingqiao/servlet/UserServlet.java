@@ -17,7 +17,7 @@ import java.util.List;
  */
 @WebServlet("/user")
 public class UserServlet extends HttpServlet {
-    UserServicelmpl serviceable = new UserServicelmpl();
+    UserServicelmpl serviceable = UserServicelmpl.GetUserServicelmpl();
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         req.setCharacterEncoding("utf-8");
